@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifying</title>
+</head>
+<body>
+<script>
+    var calculator = {
+        sum:0,
+        add:function(value){
+
+            this.sum  += value;
+
+        },
+        clear: function () {
+
+            this.sum  = 0;
+    },
+        equals: function(){
+
+            return this.sum;
+    }
+    }
+</script>
+</body>
+</html>

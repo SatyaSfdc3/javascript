@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While loop</title>
+</head>
+<body>
+<h3>We wil discuss while loop here</h3>
+<!--<script>-->
+    <!--function randomNumber(upper){-->
+        <!--return Math.floor(Math.random() * upper)+1;-->
+    <!--}-->
+<!--var counter = 0;-->
+    <!--while( counter < 10000 ){-->
+        <!--var randNum = randomNumber(6);-->
+        <!--document.write(randNum + ' ');-->
+        <!--counter += 1;-->
+
+    <!--}-->
+
+<!--</script>-->
+<script>
+    var upper = 10000;
+    var randomNumber = getRandomNumber(upper);
+    var guess;
+    var attempts = 0;
+
+    function getRandomNumber(upper){
+        return Math.floor(Math.random() * upper )+ 1;
+
+    }
+
+    while(guess !== randomNumber){
+        guess = getRandomNumber(upper);
+        attempts +=1;
+
+    }
+    document.write("<p>The random Number was:  " + randomNumber + "</p>");
+    document.write("<p> it tooks the computer " + attempts + " attempts to get it right </p>");
+</script>
+</body>
+</html>

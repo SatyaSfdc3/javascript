@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scope1</title>
+</head>
+<body>
+<script>
+    var top = 10;
+    // var inner = 50;
+
+    function foo(){
+        var inner = 20;
+    }
+    console.log(inner);
+    foo();
+
+</script>
+</body>
+</html>

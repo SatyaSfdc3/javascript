@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript function constructor</title>
+</head>
+<body>
+<script type="text/javascript">
+    var func = new Function("x", "y", "return x*y;");//constructor
+    function secondFunction(){//took a another function
+        var result;//take a result as a variable
+        result=func(10,20);//assigning values to func object
+        document.write(result);
+
+    }
+</script>
+<p>
+    <b>This is the applcation of function constructor
+    </b>
+</p>
+<form>
+    <Input type="button" onClick="secondFunction()" value="click Here">
+</form>
+<p><b>Click the above button to see result fo this application</b></p>
+</body>
+</html>

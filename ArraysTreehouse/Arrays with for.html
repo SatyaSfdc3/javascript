@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays with for</title>
+</head>
+<body>
+<h4>we will discuss for loop with arrays here</h4>
+<script>
+    /*//Methods in Arrays
+    var currentStudents = ['john', 'john', 'joaquin'];
+    var newStudents = ['sam', 'traci', 'trago'];
+    var allStudents = currentStudents.concat(newStudents);
+    console.log(allStudents);
+    var position = allStudents.indexOf('sam');
+    console.log(position);
+*/
+    var inStock = ['apple','banana','orange','Milk','eggs','bread','pizza'];
+    var search;
+
+    function print(message){
+        document.write('<p>' + message +'</p>');
+    }
+    while(true){
+        search = prompt("search for a product ");
+        if(search === 'quit') {
+            break;
+        }else if(search === 'list'){
+            print(inStock.join(', '));
+
+        }else{
+            if(inStock.indexOf(search )>-1){
+                print('Yes we have ' + search + ' in the stock');
+
+            }else {
+                print ( search + 'is not in stock');
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

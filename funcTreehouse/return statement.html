@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>return statement</title>
+</head>
+<body>
+<h3>return statement</h3>
+<script>
+//    function isEmailEmpty(){
+//        var field = document.getElementById('email');
+//            if(field.value === ''){
+//                return true;
+//
+//            }else {
+//                return false;
+//
+//            }
+//    }
+//    var fieldTest = isEmailEmpty();
+//    if(fieldTest === true){
+//        alert('please provide your email address');
+//
+//    }
+
+function getRandomNumber(upper){
+    var randomNumber = Math.floor(Math.random() * upper )+1;
+    return randomNumber;
+
+}
+//console.log(getRandomNumber(9));
+//console.log(getRandomNumber(100));
+//console.log(getRandomNumber(10000));
+
+function getArea(length, width, unit){
+    var area = length * width;
+    return area + " " + unit;
+
+}
+console.log(getArea(10,20,'sq ft'));
+
+
+
+
+</script>
+</body>
+</html>

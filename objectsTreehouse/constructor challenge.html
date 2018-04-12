@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor challenge</title>
+</head>
+<body>
+<script>
+    function Dice(sides,roll) {
+        this.sides = sides;
+        this.roll = function(){
+            var randomNumber = (Math.floor(Math.random()*this.sides)+1);
+            return randomNumber;
+            }
+
+    }
+    var dice1 = new Dice(6);
+    console.log(dice1.roll());
+</script>
+</body>
+</html>

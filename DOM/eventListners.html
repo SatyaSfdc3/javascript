@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+<html>
+    <head>          
+<meta charset="utf-8">
+
+            
+        <title>
+            EventListeners
+        </title>
+        
+    </head>
+    <p id = "windowTest"></p>
+    <p>In this we will learn DOM EventListeneres</p>
+    <button id="ClickMe">ClickMe</button>
+    <body>
+        <script>
+            var elem = document.getElementById("ClickMe");
+            elem.addEventListener('click', callMyFunction);
+            elem.addEventListener('click', callMyFunction2);
+
+            function callMyFunction(){
+                alert("Welcome to World!");
+                
+            }
+            function callMyFunction2(){
+                console.log("Hai You are Welcome!");
+            }
+            var count = 15;
+            window.addEventListener("resize",function()
+            {
+                    callResize(count);
+            });
+            function callResize(count)
+            {
+                document.getElementById('windowTest').innerHTML = count++;
+
+            }
+
+        </script>
+    </body>
+</html>

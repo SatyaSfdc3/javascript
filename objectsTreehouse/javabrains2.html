@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dot n bracket</title>
+</head>
+<body>
+<script>
+    var myObj = {
+        "prop" : 'hello',
+        "prop1" : 123,
+        "prop3" : true
+        "objProp" : {
+            "innerProp" : "innerProperty"
+        }
+    };
+    console.log(myObj.objProp.innerProp);
+
+    myObj.objProp.newInner = "new inner value";
+     console.log(myObj.objProp["newInner"]);
+
+    /*console.log(myObj);
+
+    console.log("The number Property is" + myObj.prop1);
+
+    console.log("Accessing using square bracket notation" + myObj["prop1"]);
+*/
+
+/*var propteryName = "prop1";
+
+console.log(myObj[propteryName]);*/
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NO OF ELEMENTS</title>
+</head>
+<body>
+<p>
+    Lions : <input type="Animals" type="radio" value = "lions">
+    cows  : <input type = 'Animals' type = "radio" value = "cows">
+    Monkeys  : <input type = 'Animals' type = "radio" value = "Monkeys">
+    Tigers : <input type = "Animals" type = 'tigers' value = 'tigers'>
+
+</p>
+<p><input type = 'button' onclick="numofelements()" value = 'find no of elements'>
+</p>
+<p id="p1234"></p>
+
+<script>
+    function numofelements() {
+        var x = document.getElementsByName("Animals");
+        document.getElementById('p1234').innerHTML = x.length;
+
+    }
+</script>
+</body>
+</html>

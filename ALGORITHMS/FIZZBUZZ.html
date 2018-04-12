@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIZZBUZZ</title>
+</head>
+<body>
+<script>
+    function fizzBuzz(num) {
+        //Now for every number form a 1 to num we want to perform some kind of action
+        //either we want to log out that number or log out a word in place of that number
+        //such as fizz or buzz etc.
+        //in order to do this we will loop through each and every number from 1 to num using a for loop
+        for (i = 1; i <= num; i++) {
+            if ( i % 3 === 0 && i % 5 === 0) console.log('fizzbuzz');
+           else if (i % 3 === 0) {
+                console.log('FIZZ');
+
+            } else if (i % 5 === 0) {
+                console.log('Buzz');
+            }else console.log(i);
+        }
+    }
+    fizzBuzz(20);
+
+</script>
+</body>
+</html>

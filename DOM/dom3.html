@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation dom css</title>
+</head>
+<style>
+    #container{
+        height: 800px;
+        width: 500px;
+        background: red;
+        position: relative;
+    }
+    #animate{
+        height: 50px;
+        width: 50px;
+        background: blue;
+        position: absolute;
+    }
+</style>
+<button onclick="moveOn()">MoveON</button><br><br>
+<body>
+<div id="container">
+    <div id="animate"></div>
+</div>
+
+<script>
+    function moveOn(){
+        var smallBox=document.getElementById('animate');
+        var pos=0;
+        var hiinterval = setInterval(frame, 10);
+        function frame(){
+            if(pos == 500){
+                clearInterval(hiinterval);
+            }
+            pos++;
+            smallBox.style.top=pos + "px";
+            smallBox.style.left=pos + "px";
+        }
+    }
+
+</script>
+</body>
+</html>

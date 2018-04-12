@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+</head>
+<body>
+<h3>We will discuss using let with for loops</h3>
+<h1>Buttons</h1>
+<Button>Button 0</Button>
+<Button>Button 1</Button>
+<Button>Button 2</Button>
+<Button>Button 3</Button>
+<Button>Button 4</Button>
+<Button>Button 5</Button>
+<Button>Button 6</Button>
+<Button>Button 7</Button>
+<Button>Button 8</Button>
+<Button>Button 9</Button>
+
+<script>
+    const buttons = document.getElementsByTagName("button");
+
+   for(let i = 0; i < buttons.length; i++) {
+       const button = buttons[i];
+       button.addEventListener("click", function(){
+           alert("Button " +  i + " Pressed");
+
+       });
+
+    }
+</script>
+</body>
+</html>

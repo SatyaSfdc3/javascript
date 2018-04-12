@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects of javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+    var car={type:"fiat",
+            model:"latest",
+            weight:"500kg"
+            };
+    var person={firstName:"satya",
+                lastName:"Narayana",
+                height:"6ft",
+                changename: function(newFirstName){
+                    this.firstName=newFirstName;
+                }
+
+
+    };
+    console.log(person.firstName);
+    person.changename("NvSatyaNarayana");
+    console.log(person.firstName);
+
+
+
+</script>
+</body>
+</html>

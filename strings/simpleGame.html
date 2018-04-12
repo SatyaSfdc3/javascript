@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Story use case</title>
+</head>
+<body>
+<h1>Story Teller</h1>
+<script>
+    var questions = 3;
+    var questionsLeft = '[' + questions +' questionsLeft]';
+var input1 = prompt("Noun Here" + questionsLeft);//satya
+     questions -=1;
+     questionsLeft = '[' + questions + ' questionsLeft]';
+
+var input2 = prompt("Another word here" +questionsLeft);//welcome
+
+    questions -=1;
+    questionsLeft = '[' +questions + ' questionsLeft]';
+
+var input3 = prompt("Enter some more" +questionsLeft);//AngularJs
+
+alert("you are done entering!!!");
+
+var story = ' Hai ' +input1 +" yoU are " +input2 +" to javascript " +input3 +" and Nodejs";
+
+document.write(story);
+</script>
+</body>
+</html>

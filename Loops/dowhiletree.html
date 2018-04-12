@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do while 3</title>
+</head>
+<body>
+<h2>we will discuss do while here</h2>
+<script>
+    //generate the secret number is a random integer number between 1 and 12
+    const Min = 1;
+    const Max = 12;
+
+    var secretNumber = Math.floor(Math.random() * (Max - Min + 1 )) + Min;
+
+    var guesses = 0;//for storing the number of guesses
+    var hint = '';
+    do{
+
+        //get the uset input
+        var input = prompt("please enter a number between ${MIN} and {MAX}" +hint);
+
+        //get the interger
+        var number = parseInt(input);
+
+        //increase the number of guesses
+        guesses++;
+        //check input number with the secret number
+        //provide hint if needed
+
+        if(number > secretNumber){
+            hint = ', and greater than ' +number;
+        }else if(number < secretNumber){
+            hint =', and greater than '+number;
+
+        }else if(number === secretNumber){
+            alert(`Bravo! you're correct after ${guesses} guess(es).`);
+        }
+
+
+    }while (number !=secretNumber)
+
+</script>
+
+</body>
+</html>

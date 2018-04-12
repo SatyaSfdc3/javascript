@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope1</title>
+</head>
+<body>
+<p><strong>Note:</strong>In This We will See Scope Example in javascript</p>
+<p id="global scope"</p>
+<script>
+    var name;
+    function myfunction() {
+        var name;
+        name='satya';
+        console.log('from within the function' + name);
+
+    }
+    function myFunction2(){
+        name='Narayana';
+        console.log('from within the function2' +name);
+
+    }
+    function myFunction3(){
+        name='NVSatyaNarayana';
+        console.log('From Within the function3' +name);
+
+    }
+    function myFunction4(){
+        name='javascript developer';
+        console.log('From within the function4'+name);
+    }
+    function myFunction5(){
+        name='Html5,css3,javascript,jQuery,AngulerJs,NodeJs,ReacrJs,D3.js,vue.js';
+        console.log('from within the function5' +name);
+
+    }
+    myfunction();
+    myFunction2();
+    myfunction();
+    myFunction3();
+    myFunction4();
+    myFunction5();
+    console.log(name);
+
+    document.getElementById('global scope').innerHTML='I can display' + Window.name
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+</head>
+<body>
+<p><h1>Switch Statement</h1></p>
+<p id="day"/>
+<input id="myInput" type = "text" value = "bmw">
+<button onclick="checkCar()">Check Car</button>
+<p id="car"></p>
+<!--<script>
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "sunday";
+            break;
+
+        case 1:
+            day = "Monday";
+            break;
+
+        case 2:
+            day = "Tuesday";
+            break;
+
+        case 3:
+            day = "Wednesday";
+            break;
+
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "saturday";
+            break;
+    }
+    document.getElementById('day').innerHTML=day;
+    </script>
+-->
+<script>
+    function checkCar(){
+        var text;
+        var favCar=document.getElementById('myInput').value;
+
+
+        switch (favCar){
+            case "bmw":
+                text='germancar';
+                break;
+            case "Ford":
+                text="American car";
+                break;
+            case "Tata":
+                text="Indian car";
+                break;
+            default:
+                text="unknown car";
+        }
+    }
+</script>
+
+</body>
+</html>

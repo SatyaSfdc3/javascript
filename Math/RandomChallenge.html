@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandomChallenge</title>
+</head>
+<body>
+<h1>Here we will challenge Random number</h1>
+<script>
+   var input1 = prompt("Enter your first Number");
+   var topNumber = parseInt(input1);
+
+   var input2 = prompt("Enter your second Number");
+   var bottomNumber = parseInt(input2);
+
+   var randomNumber = Math.floor(Math.random() * (topNumber-bottomNumber)+1)+bottomNumber;
+
+   var message = "<p> " + randomNumber + " is a Number between " + bottomNumber + "and " +topNumber + ".</p>";
+   document.write(message);
+
+</script>
+</body>
+</html>

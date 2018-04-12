@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forlooop</title>
+</head>
+
+<body>
+table value<input type = "text" value = "" id="p2"/>
+upto<input type= "text" value="" id="p3"/>
+<button onclick="myfunctions()">submit</button>
+<p id = 'p5' >ram</p>
+<script>
+    function myfunctions() {
+        var a = parseInt(document.getElementById("p2").value);
+        var b = parseInt(document.getElementById("p3").value);
+        var z = 0;
+        for(i=1; i<=b; i++)
+        {
+            z= z + (i*a)+ '=' + i + ' *'+ a + '<br/>';
+
+        }
+        document.getElementById("p5").innerHTML = z;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor</title>
+</head>
+<body>
+<script>
+    var city = function(name, state) {
+
+        this.name = name || 'portland';
+        this.state = state || 'oreo';
+        this.printMyCityAndState = function () {
+            console.log("my city is " + this.name + ", and my state is " + this.state);
+        };
+
+
+    };
+
+    portland = new city();//created an object for city function
+    seattle = new city('seattle', 'washington' );//create another object for
+    //city function but with arguments
+
+    console.log(portland);//calling portland object
+    console.log(seattle);//calling seattle object
+
+
+</script>
+</body>
+</html>
